@@ -5,33 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <h1>Calclator</h1>
+        <h1 id="label">Calclator</h1>
         <div class="result">
-            <input type="number" id="input">
+            <h1 id="input"></h1>
         </div>
         <div class="buttons">
             <button id="ac">AC</button>
             <button id="delete">DEL</button>
-            <button id="multi">*</button>
-            <button id="one">1</button>
-            <button id="two">2</button>
-            <button id="three">3</button>
-            <button id="div">/</button>
-            <button id="four">4</button>
-            <button id="five">5</button>
-            <button id="six">6</button>
-            <button id="plus">+</button>
-            <button id="seven">7</button>
-            <button id="eight">8</button>
-            <button id="nine">9</button>
-            <button id="min">-</button>
-            <button id="double-zero">00</button>
-            <button id="zero">0</button>
+            <button id="multi" onclick="addOperator('*')">*</button>
+            <button id="one" onclick="writeNumber('1');">1</button>
+            <button id="two" onclick="writeNumber('2');">2</button>
+            <button id="three" onclick="writeNumber('3');">3</button>
+            <button id="div" onclick="addOperator('/')">/</button>
+            <button id="four" onclick="writeNumber('4');">4</button>
+            <button id="five" onclick="writeNumber('5');">5</button>
+            <button id="six" onclick="writeNumber('6');">6</button>
+            <button id="plus" onclick="addOperator('+')">+</button>
+            <button id="seven" onclick="writeNumber('7');">7</button>
+            <button id="eight" onclick="writeNumber('8');">8</button>
+            <button id="nine" onclick="writeNumber('9');">9</button>
+            <button id="min" onclick="addOperator('-')">-</button>
+            <button id="double-zero" onclick="writeNumber('00');">00</button>
+            <button id="zero" onclick="writeNumber('0');">0</button>
             <button id="dot">.</button>
             <button id="asign">=</button>
         </div>

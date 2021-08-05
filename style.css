@@ -23,7 +23,7 @@ body {
     
 }
 
-h1 {
+#label {
     width: 140px;
     text-align: center;
     border-radius: 8px;
@@ -57,15 +57,18 @@ button {
 }
 #input {
     width: 400px;
-    height: 80px;
+    height: 65px;
     grid-template-columns: 1fr;
+    background-color: rgb(238, 223, 223);
     direction: ltr;
     text-align: right;
+    vertical-align: bottom;
     font-family: 'Space Mono';
     font-size: 40px;
-    margin: 4px;
+    margin: 8px;
     border-radius: 4px;
     text-shadow: 0 0 3px #09ff00, 0 0 5px #2d7ee9;
+    cursor: text;
 }
 
 
@@ -75,4 +78,5 @@ button {
 
 button:hover {
     background-color: black;
+    cursor: pointer;
 }
